@@ -1,9 +1,27 @@
+body {
+    background-color:rgb(230, 220, 200);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 24px;
+}
 .ylaosa {
+    margin: -24px -24px 0px -24px;
     border-bottom: 3px solid black;
+    background-color:rgb(226, 188, 138);
 }
 
 
 h1 {
     text-align: center;
+    font-family:'Rockwell';
+    font-size: 48px;
     border-bottom: 3px solid black;
+}
+
+.kuvat {
+    padding: 10px;
+    img {
+        max-width: 500px;
+        width: 100%;
+        height:auto;
+    };
 }
