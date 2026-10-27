@@ -1,46 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kimmon Paja</title>
     <link rel="stylesheet" href="CSS/layout.css">
-    <style>
-        .logo {
-            width: 128px;
-            height: 128px;
-            cursor: pointer;
-        }
-    </style>
+
 </head>
 
 <body>
+
     <!--Yläosa alue, missä tulee olemaan otsikko, joku hieno slogan ja linkki etusivulle ja muihin paikkoihi-->
     <header class="ylaosa">
-        <h1> Kimmon Paja</h1>
-        <a href="index.html">
-            <img src="Kuvat/Logo.png" alt="Kimmon Paja logo" width="128" height="128">
-        </a>
-        <p>Kaikkea hyvää puusta ja raudasta...</p>
-        <p>Pikalinkit:</p>
+        <div class="brandi">
+
+            <a href="index.html">
+                <img src="Kuvat/Logo.png" alt="Kimmon Paja logo" width="128" height="128" class="logo">
+            </a>
+            <h1> Kimmon Paja</h1>
+            <p class="slogan">Kaikkea hyvää puusta ja raudasta...</p>
+        </div>
+    </header>
+
+    <nav class="vakionavi" aria-label="Pikalinkit">
+
+
         <ul>
             <li><a href="index.html">Etusivu</a></li>
             <li><a href="galleria.html">Galleria</a></li>
             <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
         </ul>
+    </nav>
 
-    </header>
+    <!-- Tästä alkaa sisältö, ensimmäinen ja kolmas tyhjiä sivupalkkeja myöhempää käyttöä varten...-->
+    <main class="sisalto">
+        <div class="vasen">
+            <p>Sivupalkki</p>
+        </div>
+        <article class="paasisalto">
+            <h2>Työt tähän saakka:</h2>
+            <p>placeholderit töille</p>
+            <div class="galleria">
+                <article class="kuvakortti">
+                    <img src="Kuvat/Gisse_1.jpg" alt="placeholder" width="250" height="250">
+                    <p>kuva1</p>
+                </article>
+                
+                <article class="kuvakortti">
+                    <img src="Kuvat/Gisse_2.jpg" alt="placeholder" width="250" height="250">
+                    <p>kuva2</p>
+                </article>
 
-    <div class="kuvat">
-        <img src="Kuvat/Gisse_1.jpg" alt="placeholder" width="250" height="250">
-        <p>kuva1</p>
-        <img src="Kuvat/Gisse_2.jpg" alt="placeholder" width="250" height="250">
-        <p>kuva2</p>
-        <img src="Kuvat/Gisse_3.jpg" alt="placeholder" width="250" height="250">
-        <p>kuva3</p>
-    </div>
+                <article class="kuvakortti">
+                    <img src="Kuvat/Gisse_3.jpg" alt="placeholder" width="250" height="250">
+                    <p>kuva3</p>
+                </article>
+
+            </div>
+        </article>
+
+        <div class="oikea">
+            <p>Sivupalkki</p>
+
+    </main>
+                    <p>kuva3</p>
+                </div>
+
+            </div>
+        </article>
+
+        <div class="oikea">
+            <p>Sivupalkki</p>
+
+    </main>
+    <footer>
+        <p>Copyright &copy; 2026 Kimmo Kokkolasta</p>
+        <p> Kaikki oikeudet pidätetään.</p>
+    </footer>
 
 </body>
+
+
 
 </html>

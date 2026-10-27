@@ -12,7 +12,7 @@ body {
     
     background-color:rgb(230, 220, 200);
     font-family:Georgia, 'Times New Roman', Times, serif;
-    margin: 24px;
+    margin: 0px;
 }
 /* Yläosan muotoilu */
 .ylaosa {
@@ -60,6 +60,64 @@ body {
     text-align: center;
     justify-self: center;
 }
+/*Navigaation asettelua*/
+.vakionavi {
+    background-color:bisque;
+    padding: 3px;
+    border-bottom: 3px solid black;
+}
+.vakionavi p {
+    text-align: center;
+    margin: 0 0;
+}
+.vakionavi ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.vakionavi a {
+    display:block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 16px;
+}
+.vakionavi a:hover,
+.vakionavi a:focus-visible {
+    background-color: rgb(190,1451,95);
+    text-decoration:underline;
+
+}
+/* Mainin muotoilua ja sivupalkkien teko*/
+.sisalto {
+    display:grid;
+    grid-template-columns: max(100) minmax(100, 3200px) max(100);
+    gap: 24px;
+    padding: 24px;
+}
+
+.vasen {
+    grid-column: 1;
+    border-right: 3px solid black;
+
+}
+.paasisalto {
+    padding: 12px;
+    grid-column: 2;
+    min-width: 0px;
+
+}
+
+.oikea {
+    grid-column: 3;
+    border-left: 3px solid black;
+}
+
 .kuvat {
     padding: 10px;
     img {
@@ -75,4 +133,34 @@ footer {
     padding: 10px;
     border-top: 3px solid black;
     margin-top: auto;
+}
+/********************************************/
+/*                                          */
+/*          kuvagallerian matskua           */
+/*                                          */
+/********************************************/
+.galleria {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 24px;
+}
+/*kuvakortti*/
+.kuvakortti {
+    min-width: 0;
+    padding: 12px;
+    background-color:blanchedalmond;
+    border: 2px solid rgb(80,60,40);
+    border-radius: 8px;
+}
+
+.kuvakortti img {
+    display: block;
+    width: fit-content;
+    aspect-ratio: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.kuvakortti p {
+    margin: 0;
 }
