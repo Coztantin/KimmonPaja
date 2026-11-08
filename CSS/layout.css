@@ -62,9 +62,13 @@ body {
 }
 /*Navigaation asettelua*/
 .vakionavi {
+    position:sticky;
+    top: 0;
+    z-index: 100;
     background-color:bisque;
     padding: 3px;
     border-bottom: 3px solid black;
+
 }
 .vakionavi p {
     text-align: center;
@@ -181,4 +185,12 @@ footer {
 }
 #kilpitekstit {
     margin-top: 8px;
+}
+
+/* Video juttuja */
+#ainutvideo {
+    display:grid;
+    justify-content:center;
+    align-items:center;
+
 }
