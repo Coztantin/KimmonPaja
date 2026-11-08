@@ -89,14 +89,14 @@ body {
 }
 .vakionavi a:hover,
 .vakionavi a:focus-visible {
-    background-color: rgb(190,1451,95);
+    background-color: rgb(190,145,95);
     text-decoration:underline;
 
 }
 /* Mainin muotoilua ja sivupalkkien teko*/
 .sisalto {
     display:grid;
-    grid-template-columns: max(100) minmax(100, 3200px) max(100);
+    grid-template-columns: 200px minmax(0, 1fr) 200px;
     gap: 24px;
     padding: 24px;
 }
@@ -121,7 +121,7 @@ body {
 .kuvat {
     padding: 10px;
     img {
-        max-width: 500px;
+        max-width: 250px;
         width: 100%;
         height:auto;
     };
@@ -156,11 +156,29 @@ footer {
 
 .kuvakortti img {
     display: block;
-    width: fit-content;
+    width: 100%;
+    height: 300px;
     aspect-ratio: auto;
-    object-fit: cover;
+    object-fit: scale-down;
     border-radius: 8px;
 }
 .kuvakortti p {
     margin: 0;
+}
+
+/* Uniikki id kilvelle, koska muut kuvat on yksittäisiä */
+#kilpikuvat {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    gap: 8px;
+}
+#kilpikuvat img {
+    width: 50%;
+    height: 250px;
+    object-fit: contain;
+    min-width: 0;
+}
+#kilpitekstit {
+    margin-top: 8px;
 }
