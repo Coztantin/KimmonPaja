@@ -40,14 +40,94 @@
         </div>
         <article class="paasisalto">
             <section>
-                <h2>Yhteystiedot</h2>
+                <h2>Yhteydenotto</h2>
                 <p>Voitte ottaa minuun yhteyttä monella eri tavalla! Suosin sähköpostia tai lomakkeen täyttöä!</p>
-                <ul>
-                    <li>Sähköposti: kimmon.paja@luukku.fi</li>
-                    <li>Puhelin: +358 123 456 789</li>
-                    <li>Osoite: Katu 1, 00000 Kaupunki</li>
-                </ul>
+                <table width="500">
+                    <caption style="text-align: left;"><strong>Yhteystiedot:</strong></caption>
 
+
+                    <tbody>
+
+                        <tr style="height: 10px;">
+                            <td style="width: 30%; font-weight: bold"> </td>
+                            <td> </td>
+                        </tr>
+                        <tr style="height: 30px;">
+                            <td style="width: 30%; font-weight: bold">Sähköposti:</td>
+                            <td>kosti.korkiakoski@centria.fi</td>
+                        </tr>
+                        <tr style="height: 30px;">
+                            <td style="width: 30%; font-weight: bold">Puhelin:</td>
+                            <td>+358 123 456 789</td>
+                        </tr>
+                        <tr style="height: 30px;">
+                            <td style="width: 30%; font-weight: bold">Osoite:</td>
+                            <td>Tonttukatu 13, 00000 Kokkola</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+
+            <section>
+                
+                <form action="/laheta" method="post">
+                    <h2>Yhteydenottolomake</h2>
+                    <!--Perustiedot-->
+                    <p> </p>
+                    <p>
+                        <label for="etunimi">Etunimi</label>
+                        <input required placeholder="Kimmo" type="text" id="etunimi" name="Etunimi">
+                        <label for="sukunimi">Sukunimi</label>
+                        <input required placeholder="Orasratas" type="text" id="sukunimi" name="Sukunimi">
+                    </p>
+                    <p>
+                        <label for="sähköposti">Sähköposti</label>
+                        <input required placeholder="kimmon.paja@luukku.fi" type="email" id="sähköposti"
+                            name="Sähköposti" autocomplete="email">
+                        <label for="puhelinnro">Puhelinnumero</label>
+                        <input required placeholder="0401234567" type="tel" id="nro" name="Puhelinnumero">
+                    </p>
+                    <!--Lisätiedot-->
+                    
+                    <fieldset>
+                        <legend>Yhteydenoton aihe</legend>
+                        <input type="radio" id="toimeksianto" name="koskien" value="toimeksianto">
+                        <label for="toimeksianto">Toimeksianto</label><br>
+
+                        <input type="radio" id="kysely" name="koskien" value="kysely">
+                        <label for="kysely">Kysymys</label><br>
+
+                        <input type="radio" id="osto" name="koskien" value="osto">
+                        <label for="osto">Ostaisin</label>
+                    </fieldset>
+
+                    <!--Vapaamuotoinen tekstikenttä-->
+                    <p>
+                        <label for="viesti">Mitä asiasi koskee?</label><br>
+                        <textarea required placeholder="Kirjoita tähän viestisi..." id="viesti" name="Viesti" rows="10"
+                            cols="100"></textarea>
+                    </p>
+                    <fieldset>
+                        <legend>Toivottu yhteydenottotapa:</legend>
+
+                        <input type="radio" id="sahkoposti" name="yhteydenottotapa" value="sahkoposti">
+                        <label for="sahkoposti">Sähköposti</label><br>
+
+                        <input type="radio" id="puhelin" name="yhteydenottotapa" value="puhelin">
+                        <label for="puhelin">Puhelin</label>
+
+                         <input type="radio" id="puhelin" name="yhteydenottotapa" value="puhelin">
+                        <label for="puhelin">Puhelin</label>
+                    </fieldset>
+                    <p>
+                        <a href="tietosuoja.html">Tutustu tietosuojaselosteeseen</a>
+                    </p>
+
+                    <button type="submit">Lähetä</button>
+                    <button type="reset">Tyhjennä</button>
+
+                </form>
             </section>
         </article>
 
